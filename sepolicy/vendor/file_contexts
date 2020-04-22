@@ -83,3 +83,7 @@
 
 # Service HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.authsecret@1\.0-service u:object_r:hal_authsecret_default_exec:s0
+
+# XiaomiParts
+/sys/kernel/sound_control/headphone_gain                     u:object_r:sysfs_headphonegain:s0
+/sys/kernel/sound_control/mic_gain                           u:object_r:sysfs_micgain:s0
