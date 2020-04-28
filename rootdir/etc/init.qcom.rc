@@ -431,6 +431,10 @@ on post-fs-data
     chown system system /vendor/mnt/persist/PRSensorData.txt
     chmod 0600 /vendor/mnt/persist/PRSensorData.txt
 
+    #fps info
+    chown system graphics /sys/devices/virtual/graphics/fb0/measured_fps
+    chmod 0666 /sys/devices/virtual/graphics/fb0/measured_fps
+
     #Create directory for hostapd
     mkdir /data/hostapd 0770 system wifi
 

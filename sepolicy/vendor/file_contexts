@@ -87,3 +87,6 @@
 # XiaomiParts
 /sys/kernel/sound_control/headphone_gain                     u:object_r:sysfs_headphonegain:s0
 /sys/kernel/sound_control/mic_gain                           u:object_r:sysfs_micgain:s0
+
+#FPS Info
+/sys/class/graphics/fb0/measured_fps                         u:object_r:sysfs_fpsinfo:s0
