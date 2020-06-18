@@ -161,6 +161,10 @@ on boot
     mkdir /dev/socket/qmux_gps 0770 gps gps
     chmod 2770 /dev/socket/qmux_gps
 
+    #Smart charge
+    chmod 0660 /sys/class/power_supply/battery/charging_enabled
+    chown system system /sys/class/power_supply/battery/charging_enabled
+
     #define back flash and front flash
     chmod 0660 /sys/android_camera/sensor
     chmod 0660 /sys/class/leds/led:flash_0/brightness

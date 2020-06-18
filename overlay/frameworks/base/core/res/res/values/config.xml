@@ -1188,13 +1188,17 @@
     <string-array name="config_deviceDisabledComponents" translatable="false">
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
     </string-array>
-
-    <!-- Smart charge sysfs node and value for suspend/resume charging-->
-    <bool name="config_smartChargingAvailable">true</bool>
-
     <!-- Telephony qualified networks service package name to bind to by default. -->
     <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
 
     <!-- Specify custom blanking delay of the display -->
     <integer name="config_screen_off_delay">0</integer>
+     
+    <!-- Smart charge sysfs node and value for suspend/resume charging-->
+    <bool name="config_smartChargingAvailable">true</bool>
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string>
+
 </resources>
+
