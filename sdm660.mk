@@ -396,10 +396,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay-lineage \
     $(COMMON_PATH)/overlay-system
 
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
+PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(COMMON_PATH)/overlay-system
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -595,3 +594,11 @@ PRODUCT_BOOT_JARS += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
    XiaomiParts
+
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+# Recorder
+PRODUCT_PACKAGES += \
+    OPScreenRecorder
